@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@use './myapp-theme';
+
+/*Page header should remain fixed hence subtracting header's height*/
+.app-section-container {
+  height: calc(100% - 60px);
+  overflow-y: auto;
+  padding-bottom: 30px;
+}
+
+.user-container {
+  height: calc(100% - 93px);
+  overflow-y: auto;
+  padding-bottom: 30px;
+}

@@ -1,0 +1,22 @@
+// IMPORTANT - PLEASE DO NOT REMOVE THE SPECIAL COMMENTS STARTING WITH //@@.
+// THESE ARE REQUIRED FOR ADDING IMPORTS AND INCLUDES FOR A NEWLY CREATED COMPONENT.
+
+@use '@ruf/shell' as ruf;
+
+//@@IMPORT
+
+// a convenience mixin that aggregates all of your component theme mixins
+@mixin app-all-theme($theme, $config: null) {
+  // include your theme mixins below
+
+  //@@INCLUDE
+  //@include ruf.ruf-mat-button-theme($theme);
+
+  @include app-typography($config);
+}
+
+@mixin app-typography($config: ruf.ruf-typography-config()) {
+  // include your typography mixins below
+
+  //@@TYPOGRAPHY
+}

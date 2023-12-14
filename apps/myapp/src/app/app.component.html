@@ -1,0 +1,27 @@
+<div class="ruf-flex-layout-column" [style.height]="'100vh'">
+  <ruf-banner>
+    <ruf-banner-brand [title]="title"></ruf-banner-brand>
+    <ruf-banner-row rufHide.xs>
+      <ruf-navbar color="default">
+        <ruf-menubar rufMarginLeft="none">
+          <a
+            rufMenubarItem
+            routerLink="welcome"
+            routerLinkActive="ruf-menubar-item-active"
+            >Welcome</a
+          >
+        </ruf-menubar>
+      </ruf-navbar>
+    </ruf-banner-row>
+  </ruf-banner>
+  <ruf-app-canvas
+    class="ruf-flex"
+    [style.paddingBottom]="'0px'"
+    [style.overflow-y]="'hidden'"
+  >
+    <router-outlet></router-outlet>
+  </ruf-app-canvas>
+  <ruf-footer> &copy; 2020 FIS </ruf-footer>
+</div>
+
+<button mat-raised-button="" fisStyle color="primary" rufId (click)="logout()">Logout</button>

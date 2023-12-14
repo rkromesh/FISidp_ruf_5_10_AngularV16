@@ -1,0 +1,5 @@
+/* Importing the prebuilt color theme called "fis-default" */
+@use '@ruf/prebuilt-themes/fis-default';
+
+// Importing the RUF shell structural styles
+@use '@ruf/shell/styles/index';
